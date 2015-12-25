@@ -1,6 +1,28 @@
-<!DOCTYPE html>
-html(lang="ru")
+doctype
+html(lang="Ru")
 head
-	meta(charset="UTF-8")
-	title Document
+    meta(charset="Utf-8")
+    title
+        block title
+    link(rel="stylesheet" href="css/main.css")
+    link(rel="stylesheet" href="css/jquery-ui.min.css")
 body
+    .wrapper
+        .maincontent
+            include _common/header
+            include _common/navigation
+            .head-content
+                .container
+                    ul.page-breadcrumb__list
+                        li.page-breadcrumb__item
+                            a(href="#").page-breadcrumb__link Главная
+                        li.page-breadcrumb__item &gt;
+                        li.page-breadcrumb__item
+                            a(href="#").page-breadcrumb__link Каталог
+                    h2.header-nav Мобильные телефоны
+            .content
+                .content-wrapper
+                    include _common/sidebar
+    script(src="bower/jquery/dist/jquery.min.js")
+    script(src="js/jquery-ui.min.js")
+    script(src="js/slider.js")

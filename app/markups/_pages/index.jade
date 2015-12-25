@@ -1,14 +1,4 @@
-<!DOCTYPE html>
-html(lang="ru")
-head
-	meta(charset="UTF-8")
-	title Document
-body
-	.wrapper
-		.maincontent
-			include ../_common/header.jade
-			include ../_common/navigation.jade
+extends ../main
 
-			.content
-				.content-wrapper
-					include ../_common/sidebar.jade
+block title
+	| Каталог

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="Ru"></html>
+<head>
+	<meta charset="Utf-8">
+	<title>Каталог</title>
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/jquery-ui.min.css">
+</head>
+<body>
+	<div class="wrapper">
+		<div class="maincontent">
+			<header class="header">
+				<div class="header-top">
+					<div class="container">
+						<ul class="social__list">
+							<li class="social__item"><a href="facebook.com" target="_blank" class="social__link social__link_fb"></a></li>
+							<li class="social__item"><a href="vk.com" target="_blank" class="social__link social__link_vk"></a></li>
+							<li class="social__item"><a href="twitter.com" target="_blank" class="social__link social__link_tw"></a></li>
+						</ul>
+						<div class="contact-us"><a href="#" class="contact-us__addres">ул.Маяковсая 6, офис 17</a><a href="tel:+79211231213" class="contact-us__phone">+7 (921) 123-12-13</a></div>
+					</div>
+				</div>
+				<div class="header-bottom">
+					<div class="container">
+						<h1 class="header-title"><a href="#" class="header-title__link"><img src="img/logo.png" alt="COOLTECH" class="header-title__logo"></a></h1>
+						<form action="#" method="get" class="search-form">
+							<label class="search-form__label">
+								<input type="search" placeholder="Что будем искать" class="search-form__input">
+							</label>
+							<button type="submit" class="search-form__button">Найти</button>
+						</form>
+						<ul class="user-buttons__list">
+							<li class="user-buttons__item"><a href="#" class="user-buttons__link">Карта проезда</a></li>
+							<li class="user-buttons__item"><a href="#" class="user-buttons__link">История заказов</a></li>
+							<li class="user-buttons__item"><a href="#" class="user-buttons__link">Корзина</a></li>
+						</ul>
+					</div>
+				</div>
+			</header>
+			<nav class="navigation">
+				<div class="container">
+					<ul class="navigation__list">
+						<li class="navigation__item"><a href="#" class="navigation__link">Планшеты</a></li>
+						<li class="navigation__item active"><a href="#" class="navigation__link">Мобильные телефоны</a></li>
+						<li class="navigation__item"><a href="#" class="navigation__link">Mp3 плееры</a></li>
+						<li class="navigation__item"><a href="#" class="navigation__link">Персональные компьютеры</a></li>
+						<li class="navigation__item"><a href="#" class="navigation__link">Ноутбуки</a></li>
+						<li class="navigation__item"><a href="#" class="navigation__link">Аксессуары</a></li>
+						<li class="navigation__item"><a href="#" class="navigation__link">Бытовая техника</a></li>
+					</ul>
+				</div>
+			</nav>
+			<div class="head-content">
+				<div class="container">
+					<ul class="page-breadcrumb__list">
+						<li class="page-breadcrumb__item"><a href="#" class="page-breadcrumb__link">Главная</a></li>
+						<li class="page-breadcrumb__item">&gt;</li>
+						<li class="page-breadcrumb__item"><a href="#" class="page-breadcrumb__link">Каталог</a></li>
+					</ul>
+					<h2 class="header-nav">Мобильные телефоны</h2>
+				</div>
+			</div>
+			<div class="content">
+				<div class="content-wrapper">
+					<aside class="sidebar">
+						<ul class="user-price-select__list">
+							<li class="user-price-select__item"><a href="#" class="user-price-select__link">Флагманы</a></li>
+							<li class="user-price-select__item"><a href="#" class="user-price-select__link">Бюджетная линейка</a></li>
+						</ul>
+						<ul class="accordeon__list">
+							<li class="accordeon__item">
+								<h4 class="accordeon__trigger">Наличие в магазинах</h4>
+								<ul class="accordeon-inner">
+									<li class="accordeon-inner__item">
+										<input type="radio" name="magazine" id="magazine-first" hidden class="accordeon-inner__radio">
+										<label for="magazine-first" class="accordeon-inner__label_radio">Во всех магазинах</label>
+									</li>
+									<li class="accordeon-inner__item">
+										<input type="radio" name="magazine" id="magazine-second" hidden class="accordeon-inner__radio">
+										<label for="magazine-second" class="accordeon-inner__label_radio">В ближайшем ко мне магазине</label>
+									</li>
+								</ul>
+							</li>
+							<li class="accordeon__item">
+								<h4 class="accordeon__trigger">Бренды</h4>
+								<ul class="accordeon-inner">
+									<li class="accordeon-inner__item">
+										<input type="checkbox" name="model" id="model-one" hidden class="accordeon-inner__checkbox">
+										<label for="model-one" class="accordeon-inner__label_checkbox">Lenovo</label>
+									</li>
+									<li class="accordeon-inner__item">
+										<input type="checkbox" name="model" id="model-two" hidden class="accordeon-inner__checkbox">
+										<label for="model-two" class="accordeon-inner__label_checkbox">Apple</label>
+									</li>
+									<li class="accordeon-inner__item">
+										<input type="checkbox" name="model" id="model-three" hidden class="accordeon-inner__checkbox">
+										<label for="model-three" class="accordeon-inner__label_checkbox">Samsung</label>
+									</li>
+									<li class="accordeon-inner__item">
+										<input type="checkbox" name="model" id="model-four" hidden class="accordeon-inner__checkbox">
+										<label for="model-four" class="accordeon-inner__label_checkbox">Asus</label>
+									</li>
+									<li class="accordeon-inner__item">
+										<input type="checkbox" name="model" id="model-five" hidden class="accordeon-inner__checkbox">
+										<label for="model-five" class="accordeon-inner__label_checkbox">Motorola</label>
+									</li>
+									<li class="accordeon-inner__item"><a href="#" class="accordeon-inner__link_reset">Сбросить фильтр</a></li>
+								</ul>
+							</li>
+							<li class="accordeon__item">
+								<h4 class="accordeon__trigger">Цена</h4>
+								<!--Добавить jquery ui slider-->
+								<div class="slider"></div>
+							</li>
+							<li class="accordeon__item">
+								<h4 class="accordeon__trigger">Цвет</h4>
+								<ul class="accordeon-inner">
+									<li class="accordeon-inner__item_color"><a href="#" class="accordeon-inner__link_color"></a></li>
+									<li class="accordeon-inner__item_color"><a href="#" class="accordeon-inner__link_color"></a></li>
+									<li class="accordeon-inner__item_color"><a href="#" class="accordeon-inner__link_color"></a></li>
+									<li class="accordeon-inner__item_color"><a href="#" class="accordeon-inner__link_color"></a></li>
+									<li class="accordeon-inner__item_color"><a href="#" class="accordeon-inner__link_color"></a></li>
+									<li class="accordeon-inner__item_color"><a href="#" class="accordeon-inner__link_color"></a></li>
+									<li class="accordeon-inner__item_color"><a href="#" class="accordeon-inner__link_color"></a></li>
+									<li class="accordeon-inner__item_color"><a href="#" class="accordeon-inner__link_color"></a></li>
+									<li class="accordeon-inner__item_color"><a href="#" class="accordeon-inner__link_color"></a></li>
+									<li class="accordeon-inner__item_color"><a href="#" class="accordeon-inner__link_color"></a></li>
+									<li class="accordeon-inner__item_color"><a href="#" class="accordeon-inner__link_color"></a></li>
+									<li class="accordeon-inner__item_color"><a href="#" class="accordeon-inner__link_color"></a></li>
+								</ul>
+							</li>
+							<li class="accordeon__item">
+								<h4 class="accordeon__trigger">Операционные системы</h4>
+								<ul class="accordeon-inner">
+									<li class="accordeon-inner__item">
+										<input type="checkbox" name="os" id="os-one" hidden class="accordeon-inner__checkbox">
+										<label for="os-one" class="accordeon-inner__label_checkbox">Android</label>
+									</li>
+									<li class="accordeon-inner__item">
+										<input type="checkbox" name="os" id="os-two" hidden class="accordeon-inner__checkbox">
+										<label for="os-two" class="accordeon-inner__label_checkbox">iOS</label>
+									</li>
+									<li class="accordeon-inner__item">
+										<input type="checkbox" name="os" id="os-three" hidden class="accordeon-inner__checkbox">
+										<label for="os-three" class="accordeon-inner__label_checkbox">Windows Mobile</label>
+									</li>
+									<li class="accordeon-inner__item">
+										<input type="checkbox" name="os" id="os-four" hidden class="accordeon-inner__checkbox">
+										<label for="os-four" class="accordeon-inner__label_checkbox">Symbian</label>
+									</li>
+									<li class="accordeon-inner__item">
+										<input type="checkbox" name="os" id="os-five" hidden class="accordeon-inner__checkbox">
+										<label for="os-five" class="accordeon-inner__label_checkbox">Custom</label>
+									</li>
+									<li class="accordeon-inner__item"><a href="#" class="accordeon-inner__link_reset">Сбросить фильтр</a></li>
+								</ul>
+							</li>
+						</ul>
+					</aside>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="bower/jquery/dist/jquery.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/slider.js"></script>
+</body>

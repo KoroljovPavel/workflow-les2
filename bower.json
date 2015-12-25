@@ -1,3 +1,7 @@
 {
-	"name" : "shop"
+  "name": "shop",
+  "dependencies": {
+    "jquery": "1",
+    "normalize-css": "~3.0.3"
+  }
 }

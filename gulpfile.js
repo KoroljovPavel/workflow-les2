@@ -8,7 +8,7 @@ gulp.task('server', function() {
 	browserSync({
 		port: 9000,
 		server: {
-			baseDir: 'app/pages'
+			baseDir: 'app'
 		}
 	});
 });
@@ -30,7 +30,7 @@ gulp.task('jade', function() {
 				locals: YOUR_LOCALS,
 				pretty : '\t',
 			}))
-			.pipe(gulp.dest('app/pages'))
+			.pipe(gulp.dest('app'))
 });
 
 

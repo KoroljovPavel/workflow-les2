@@ -1,28 +1,29 @@
 header.header
-	.container
-		.header-top
+	.header-top
+		.container
 			ul.social__list
 				li.social__item
-					a(href="facebook.com" target="_blank").social__link facebook.com
+					a(href="facebook.com" target="_blank").social__link.social__link_fb
 				li.social__item
-					a(href="vk.com" target="_blank").social__link vk.com
+					a(href="vk.com" target="_blank").social__link.social__link_vk
 				li.social__item
-					a(href="twitter.com" target="_blank").social__link twitter.com
+					a(href="twitter.com" target="_blank").social__link.social__link_tw
 			.contact-us
-				addres.contact-us__addres ул.Маяковсая 6, офис 17
+				a(href="#").contact-us__addres ул.Маяковсая 6, офис 17
 				a(href="tel:+79211231213").contact-us__phone +7 (921) 123-12-13
-		.header-bottom
+	.header-bottom
+		.container
 			h1.header-title
-				a(href="#").header-title__link COOLTECH
-					img(src="", alt="COOLTECH").header-title__logo
+				a(href="#").header-title__link
+					img(src="img/logo.png", alt="COOLTECH").header-title__logo
 			form(action="#" method="get").search-form
 				label.search-form__label
-					input(type="search" placeholder="Что будем искать?").search-form__input
-				button(type="submit").search-form__button
+					input(type="search" placeholder="Что будем искать").search-form__input
+				button(type="submit").search-form__button Найти
 			ul.user-buttons__list
 				li.user-buttons__item
-					a.user-buttons__link Карта проезда
+					a(href="#").user-buttons__link Карта проезда
 				li.user-buttons__item
-					a.user-buttons__link История заказов
+					a(href="#").user-buttons__link История заказов
 				li.user-buttons__item
-					a.user-buttons__link Корзина		
+					a(href="#").user-buttons__link Корзина

@@ -1,57 +1,45 @@
-.sidebar
-	ul.page-breadcrumb__list
-		li.page-breadcrumb__item
-			a(href="#").page-breadcrumb__link Главная &gt;
-		li.page-breadcrumb__item
-			a(href="#").page-breadcrumb__link Каталог
-	h2.header-nav Мобильные телефоны
+aside.sidebar
 	ul.user-price-select__list
 		li.user-price-select__item
-			a.user-price-select__link Флагманы
+			a(href="#").user-price-select__link Флагманы
 		li.user-price-select__item
-			a.user-price-select__link Бюджетная линейка
+			a(href="#").user-price-select__link Бюджетная линейка
 	ul.accordeon__list
 		li.accordeon__item
-			a(href="#").accordeon__trigger Наличие в магазинах
+			h4.accordeon__trigger Наличие в магазинах
 			ul.accordeon-inner
 				li.accordeon-inner__item
-					label.accordeon-inner__label
-						input(type="radio" name="magazine").accordeon-inner__input
-						.accordeon-inner__text Во всех магазинах
+					input(type="radio" name="magazine" id="magazine-first" hidden).accordeon-inner__radio
+					label(for="magazine-first").accordeon-inner__label_radio Во всех магазинах
 				li.accordeon-inner__item
-					label.accordeon-inner__label
-						input(type="radio" name="magazine").accordeon-inner__input
-						.accordeon-inner__text Во всех магазинах
+					input(type="radio" name="magazine" id="magazine-second" hidden).accordeon-inner__radio
+					label(for="magazine-second").accordeon-inner__label_radio В ближайшем ко мне магазине
 		li.accordeon__item
-			a(href="#").accordeon__trigger Бренды
+			h4.accordeon__trigger Бренды
 			ul.accordeon-inner
 				li.accordeon-inner__item
-					label.accordeon-inner__label
-						input(type="checkbox" name="model")
-						.accordeon-inner__text Lenovo
+					input(type="checkbox" name="model" id="model-one" hidden).accordeon-inner__checkbox
+					label(for="model-one").accordeon-inner__label_checkbox Lenovo
 				li.accordeon-inner__item
-					label.accordeon-inner__label
-						input(type="checkbox" name="model")
-						.accordeon-inner__text Apple
+					input(type="checkbox" name="model" id="model-two" hidden).accordeon-inner__checkbox
+					label(for="model-two").accordeon-inner__label_checkbox Apple
 				li.accordeon-inner__item
-					label.accordeon-inner__label
-						input(type="checkbox" name="model")
-						.accordeon-inner__text Samsung
+					input(type="checkbox" name="model" id="model-three" hidden).accordeon-inner__checkbox
+					label(for="model-three").accordeon-inner__label_checkbox Samsung
 				li.accordeon-inner__item
-					label.accordeon-inner__label
-						input(type="checkbox" name="model")
-						.accordeon-inner__text Asus
+					input(type="checkbox" name="model" id="model-four" hidden).accordeon-inner__checkbox
+					label(for="model-four").accordeon-inner__label_checkbox Asus
 				li.accordeon-inner__item
-					label.accordeon-inner__label
-						input(type="checkbox" name="model")
-						.accordeon-inner__text Motorola
+					input(type="checkbox" name="model" id="model-five" hidden).accordeon-inner__checkbox
+					label(for="model-five").accordeon-inner__label_checkbox Motorola
 				li.accordeon-inner__item
 					a(href="#").accordeon-inner__link_reset Сбросить фильтр
 		li.accordeon__item
-			a(href="#").accordeon__trigger Цена
+			h4.accordeon__trigger Цена
 			//Добавить jquery ui slider
+			.slider
 		li.accordeon__item
-			a(href="#").accordeon__trigger Цвет
+			h4.accordeon__trigger Цвет
 			ul.accordeon-inner
 				li.accordeon-inner__item_color
 					a(href="#").accordeon-inner__link_color
@@ -78,26 +66,23 @@
 				li.accordeon-inner__item_color
 					a(href="#").accordeon-inner__link_color
 		li.accordeon__item
-			a(href="#").accordeon__trigger Операционные системы
-			li.accordeon-inner__item
-					label.accordeon-inner__label
-						input(type="checkbox" name="os")
-						.accordeon-inner__text Android
+			h4.accordeon__trigger Операционные системы
+			ul.accordeon-inner
 				li.accordeon-inner__item
-					label.accordeon-inner__label
-						input(type="checkbox" name="os")
-						.accordeon-inner__text iOS
+					input(type="checkbox" name="os" id="os-one" hidden).accordeon-inner__checkbox
+					label(for="os-one").accordeon-inner__label_checkbox Android
 				li.accordeon-inner__item
-					label.accordeon-inner__label
-						input(type="checkbox" name="os")
-						.accordeon-inner__text Windows Mobile
+					input(type="checkbox" name="os" id="os-two" hidden).accordeon-inner__checkbox
+					label(for="os-two").accordeon-inner__label_checkbox iOS
 				li.accordeon-inner__item
-					label.accordeon-inner__label
-						input(type="checkbox" name="os")
-						.accordeon-inner__text Symbian
+					input(type="checkbox" name="os" id="os-three" hidden).accordeon-inner__checkbox
+					label(for="os-three").accordeon-inner__label_checkbox Windows Mobile
 				li.accordeon-inner__item
-					label.accordeon-inner__label
-						input(type="checkbox" name="os")
-						.accordeon-inner__text Custom
+					input(type="checkbox" name="os" id="os-four" hidden).accordeon-inner__checkbox
+					label(for="os-four").accordeon-inner__label_checkbox Symbian
+				li.accordeon-inner__item
+					input(type="checkbox" name="os" id="os-five" hidden).accordeon-inner__checkbox
+					label(for="os-five").accordeon-inner__label_checkbox Custom
+
 				li.accordeon-inner__item
 					a(href="#").accordeon-inner__link_reset Сбросить фильтр

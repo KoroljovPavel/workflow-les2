@@ -10,4 +10,3 @@
 3.  bower install - (установить bower)
 4.  npm install - (установить node.js)
 5.  gulp watch - (запустить gulp)
-=======

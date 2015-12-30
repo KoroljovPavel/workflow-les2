@@ -2,3 +2,4 @@
 node_modules
 app/bower
 app/.sass-cache
+.sass-cache

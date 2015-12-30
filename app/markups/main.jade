@@ -8,21 +8,30 @@ head
     link(rel="stylesheet" href="css/jquery-ui.min.css")
 body
     .wrapper
-        .maincontent
-            include _common/header
-            include _common/navigation
-            .head-content
-                .container
-                    ul.page-breadcrumb__list
-                        li.page-breadcrumb__item
-                            a(href="#").page-breadcrumb__link Главная
-                        li.page-breadcrumb__item &gt;
-                        li.page-breadcrumb__item
-                            a(href="#").page-breadcrumb__link Каталог
-                    h2.header-nav Мобильные телефоны
-            .content
-                .content-wrapper
-                    include _common/sidebar
+        include _common/header
+        include _common/navigation
+        .head-content
+            .container
+                ul.page-breadcrumb__list
+                    li.page-breadcrumb__item
+                        a(href="#").page-breadcrumb__link Главная
+                    li.page-breadcrumb__item &gt;
+                    li.page-breadcrumb__item
+                        a(href="#").page-breadcrumb__link Каталог
+                h2.header-nav Мобильные телефоны
+        .content
+            .content-wrapper
+                include _common/sidebar
+                include _common/_main
+                include _common/text-column
+    include _common/footer
     script(src="bower/jquery/dist/jquery.min.js")
     script(src="js/jquery-ui.min.js")
+    script(src="bower/jquery.columnizer/src/jquery.columnizer.min.js")
     script(src="js/slider.js")
+    script(src="js/myAccordeon.js")
+    script(src="js/column.js")
+    script(src="js/slideshow.js")
+    script(src="js/tabs.js")
+    script(src="js/reset.js")
+    script(src="js/select.js")

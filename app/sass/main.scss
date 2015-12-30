@@ -7,6 +7,9 @@
   margin: 0;
   padding: 0;
 }
+html,body{
+  height: 100%;
+}
 a{
   text-decoration: none;
 }
@@ -21,7 +24,13 @@ body{
 }
 .wrapper{
   min-width: 1110px;
-  height:100%;
+  min-height:100%;
+  margin-bottom:-220px;
+  &:after{
+    content: '';
+    display: block;
+    height: 200px;
+  }
 }
 /*            header             */
 @import "_sections/header";
@@ -58,3 +67,9 @@ body{
 }
 /*            sidebar             */
 @import "_sections/sidebar";
+/*            main content        */
+@import "_sections/main";
+/*            text-column         */
+@import "_sections/text-column";
+/*            footer              */
+@import "_sections/footer"

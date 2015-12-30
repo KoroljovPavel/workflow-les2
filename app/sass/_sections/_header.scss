@@ -33,7 +33,7 @@
     color: #55acee;
   }
   &_fb:before{
-    content: "\e004";
+    content: "\e003";
   }
   &_vk:before{
     content: "\e00d";
@@ -56,7 +56,7 @@
   @include transition(.7s);
   &:before{
     font-family:Flaticon;
-    content: "\e003";
+    content: "\e002";
     margin-right:10px;
   }
   &:hover{

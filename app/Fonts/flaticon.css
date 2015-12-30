@@ -11,24 +11,25 @@
 [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
 [class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
 	font-family: Flaticon;
-        font-size: 15px;
+        font-size: 20px;
 font-style: normal;
+margin-left: 20px;
 }.flaticon-chevron10:before {
 	content: "\e000";
 }
 .flaticon-done:before {
 	content: "\e001";
 }
-.flaticon-downarrow25:before {
+.flaticon-facebook30:before {
 	content: "\e002";
 }
-.flaticon-facebook30:before {
+.flaticon-facebook55:before {
 	content: "\e003";
 }
-.flaticon-facebook55:before {
+.flaticon-fastforward4:before {
 	content: "\e004";
 }
-.flaticon-fastforward4:before {
+.flaticon-favourite24:before {
 	content: "\e005";
 }
 .flaticon-keyboard50:before {
@@ -40,10 +41,10 @@ font-style: normal;
 .flaticon-list50:before {
 	content: "\e008";
 }
-.flaticon-mark1:before {
+.flaticon-ruble:before {
 	content: "\e009";
 }
-.flaticon-ruble:before {
+.flaticon-star83:before {
 	content: "\e00a";
 }
 .flaticon-technology2:before {
